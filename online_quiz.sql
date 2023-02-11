@@ -15,7 +15,7 @@ SET time_zone = "+00:00";
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
+/*!40101 SET NAMES latin1 */;
 
 --
 -- Database: `quiz`
@@ -35,7 +35,7 @@ CREATE TABLE `adonet` (
   `opt3` varchar(42) DEFAULT NULL,
   `opt4` varchar(37) DEFAULT NULL,
   `ans` varchar(6) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `adonet`
@@ -64,7 +64,7 @@ CREATE TABLE `contact` (
   `name` text NOT NULL,
   `email` text NOT NULL,
   `message` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 ;
 
 --
 -- Dumping data for table `contact`
@@ -87,7 +87,7 @@ CREATE TABLE `cprogram` (
   `opt3` varchar(26) DEFAULT NULL,
   `opt4` varchar(55) DEFAULT NULL,
   `ans` varchar(6) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `cprogram`
@@ -119,7 +119,7 @@ CREATE TABLE `csecurity` (
   `opt3` varchar(34) DEFAULT NULL,
   `opt4` varchar(44) DEFAULT NULL,
   `ans` varchar(6) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `csecurity`
@@ -151,7 +151,7 @@ CREATE TABLE `dscience` (
   `opt3` varchar(18) DEFAULT NULL,
   `opt4` varchar(14) DEFAULT NULL,
   `ans` varchar(6) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `dscience`
@@ -183,7 +183,7 @@ CREATE TABLE `fcomputer` (
   `opt3` text NOT NULL,
   `opt4` text NOT NULL,
   `ans` int NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 ;
 
 --
 -- Dumping data for table `fcomputer`
@@ -212,7 +212,7 @@ CREATE TABLE `marks` (
   `Name` text NOT NULL,
   `Marks` int NOT NULL,
   `Subject` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 ;
 
 --
 -- Dumping data for table `marks`
@@ -239,7 +239,7 @@ CREATE TABLE `python` (
   `opt3` text,
   `opt4` text,
   `ans` varchar(6) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `python`
@@ -271,7 +271,7 @@ CREATE TABLE `rdbms` (
   `opt3` varchar(95) DEFAULT NULL,
   `opt4` varchar(50) DEFAULT NULL,
   `ans` varchar(6) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `rdbms`
@@ -301,7 +301,7 @@ CREATE TABLE `users` (
   `email` text NOT NULL,
   `password` text NOT NULL,
   `last_login` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 ;
 
 --
 -- Dumping data for table `users`
