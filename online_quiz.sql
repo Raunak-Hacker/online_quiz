@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: raunak-sql.mysql.database.azure.com:3306
--- Generation Time: Feb 11, 2023 at 05:51 AM
+-- Generation Time: Feb 11, 2023 at 06:35 AM
 -- Server version: 8.0.31
 -- PHP Version: 8.2.0
 
@@ -65,6 +65,45 @@ CREATE TABLE `contact` (
   `email` text NOT NULL,
   `message` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Dumping data for table `contact`
+--
+
+INSERT INTO `contact` (`Id`, `name`, `email`, `message`) VALUES
+(1, 'Atif Aslam', 'raunak200308@gmail.com', 'fsddsfdfs');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cprogram`
+--
+
+CREATE TABLE `cprogram` (
+  `Id` int NOT NULL,
+  `Question` varchar(134) DEFAULT NULL,
+  `opt1` varchar(21) DEFAULT NULL,
+  `opt2` varchar(20) DEFAULT NULL,
+  `opt3` varchar(26) DEFAULT NULL,
+  `opt4` varchar(55) DEFAULT NULL,
+  `ans` varchar(6) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+--
+-- Dumping data for table `cprogram`
+--
+
+INSERT INTO `cprogram` (`Id`, `Question`, `opt1`, `opt2`, `opt3`, `opt4`, `ans`) VALUES
+(1, ' All keywords in C are in _________?', 'LowerCase letters', 'UpperCase letters', 'CamelCase letters', ' None of the mentioned', '1'),
+(2, 'Which is valid C expression?', 'int my_num = 100,000;', 'int my_num = 100000;', 'int my num = 1000;', 'int $my_num = 10000;', '2'),
+(3, 'Functions in C Language are always _______', 'Internal', 'External', 'Both Internal and External', 'External and Internal are not valid terms for functions', '2'),
+(4, 'What is meant by ‘a’ in the following C operation?, \r\n fp = fopen(\'Random.txt\', \'a\');', 'Attach', ' Apprehend', 'Append', 'Add', '3'),
+(5, 'What will be the final value of x in the following C code?\r\n #include <stdio.h>\r\n void main() \r\n {\r\n int x = 5 * 9 / 3 + 9; \r\n }', '3.75', 'Depends on compiler', '24', '3', '3'),
+(6, 'What will be the data type returned for the following C function \r\n #include <stdio.h>\r\n int func()\r\n{\r\n return (double)(char)5.0;\r\n }', 'int', 'char', 'double', 'multiple type-casting in return is illegal', '1'),
+(7, 'What will be the output of the following C code snippet? \r\n #include <stdio.h> \r\n void main() \r\n { \r\n 1 < 2 ? return 1: return 2;\r\n }', 'returns 1', 'returns 2', 'Varies', 'Compile time error', '4'),
+(8, '\'Comment on the following C statement \r\n n = 1; \r\n printf(\'%d, %dn\', 3*n, n++);\'', 'Output will be 3, 2', 'Output will be 3, 1', 'Output will be 6, 1', 'Output is compiler dependent', '4'),
+(9, ' What will be the value of the following assignment expression?\r\n (x = foo())!= 1 considering foo() returns 2', '2', 'True', '1', '0', '1'),
+(10, 'When a C program is started, O.S environment is responsible for opening file and providing pointer for that file?', 'Standard input', 'Standard output', 'Standard error', 'All of the mentioned', '4');
 
 -- --------------------------------------------------------
 
@@ -182,7 +221,41 @@ CREATE TABLE `marks` (
 INSERT INTO `marks` (`Id`, `Name`, `Marks`, `Subject`) VALUES
 (1, 'Raunak S ', 0, 'adonet'),
 (2, 'Anonymous', 0, 'adonet'),
-(3, 'Anonymous', 1, 'adonet');
+(3, 'Anonymous', 1, 'adonet'),
+(4, 'Anonymous', 3, 'adonet'),
+(5, 'Raunak S ', 1, 'python');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `python`
+--
+
+CREATE TABLE `python` (
+  `Id` int NOT NULL,
+  `Question` text,
+  `opt1` text,
+  `opt2` text,
+  `opt3` text,
+  `opt4` text,
+  `ans` varchar(6) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+
+--
+-- Dumping data for table `python`
+--
+
+INSERT INTO `python` (`Id`, `Question`, `opt1`, `opt2`, `opt3`, `opt4`, `ans`) VALUES
+(1, 'Who developed Python Programming Language?', 'Wick van Rossum', 'Rasmus Lerdorf', 'Guido van Rossum', 'Niene Stom', '3'),
+(2, 'What will be the output of the following Python code?\r\n i = 1 \r\n while True: \r\n if i%3 == 0:\r\n break \r\n print(i) \r\n i + = 1', '1 2 3', 'Error', '1 2', 'none of the mentioned', '2'),
+(3, 'Python supports the creation of anonymous functions at runtime, using a construct called_____', 'pi', 'anonymous', 'lambda', 'none of the mentioned', '3'),
+(4, 'What will be the output of the following Python code snippet if x=1?', '4', '2', '1', '8', '1'),
+(5, 'Which of the following is correctly evaluated for this function?', '(x**y) / z', '(x / y) * z', '(x**y) % z', '(x / y) / z', '3'),
+(6, 'What will be the output of the following Python code?\r\n l=[1, 0, 2, 0, \'hello\', \'\', []] \r\n list(filter(bool, l))', '[1, 0, 2, ‘hello’, ”, []]', 'Error', ' [1, 0, 2, 0, ‘hello’, ”, []]', '[1, 2, ‘hello’]', '4'),
+(7, 'Which of the following blocks will always be executed whether an exception is encountered or not in a program?', 'try', 'finally', 'except', 'None of these', '2'),
+(8, 'Which of the following are valid escape sequences in Python?', '\r\n', '', '\\', 'All of the above', '4'),
+(9, ' What will be the output of the following Python code? \r\n class tester:\r\n def __init__(self, id): \r\n self.id = str(id)\r\n id=\'224\' \r\n >>>temp = tester(12)>>>print(temp.id)', '12', '224', 'None', 'Error', '1'),
+(10, 'What will be the output of the following code snippet?\r\n print(2**3 + (5 + 6)**(1 + 1))', '121', '8', '129', 'None of the above', '1');
 
 -- --------------------------------------------------------
 
@@ -235,7 +308,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`fname`, `lname`, `email`, `password`, `last_login`) VALUES
-('Raunak', 'S', 'ron@gmail.com', '1234', '2023-02-11 04:39:42');
+('Raunak', 'S', 'ron@gmail.com', '1234', '2023-02-11 05:11:06');
 
 --
 -- Indexes for dumped tables
@@ -251,6 +324,12 @@ ALTER TABLE `adonet`
 -- Indexes for table `contact`
 --
 ALTER TABLE `contact`
+  ADD PRIMARY KEY (`Id`);
+
+--
+-- Indexes for table `cprogram`
+--
+ALTER TABLE `cprogram`
   ADD PRIMARY KEY (`Id`);
 
 --
@@ -278,6 +357,12 @@ ALTER TABLE `marks`
   ADD PRIMARY KEY (`Id`);
 
 --
+-- Indexes for table `python`
+--
+ALTER TABLE `python`
+  ADD PRIMARY KEY (`Id`);
+
+--
 -- Indexes for table `rdbms`
 --
 ALTER TABLE `rdbms`
@@ -297,7 +382,13 @@ ALTER TABLE `adonet`
 -- AUTO_INCREMENT for table `contact`
 --
 ALTER TABLE `contact`
-  MODIFY `Id` int NOT NULL AUTO_INCREMENT;
+  MODIFY `Id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `cprogram`
+--
+ALTER TABLE `cprogram`
+  MODIFY `Id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `csecurity`
@@ -321,7 +412,13 @@ ALTER TABLE `fcomputer`
 -- AUTO_INCREMENT for table `marks`
 --
 ALTER TABLE `marks`
-  MODIFY `Id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `Id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `python`
+--
+ALTER TABLE `python`
+  MODIFY `Id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `rdbms`

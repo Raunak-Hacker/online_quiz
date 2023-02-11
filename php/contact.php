@@ -22,7 +22,7 @@ if (isset($_POST['save'])) {
         <div class="card">
             <h1>Thank You, <span id="name"><?php echo $name; ?></span> for contacting us. </h1>
             <h3>Redirecting to home in: <span id="count">5</span></h3>
-            <h4> <a href="../home.html">Go Home</a> </h4>
+            <h4> <a href="../index.html">Go Home</a> </h4>
         </div>
         <script type="text/javascript">
             var count = 5;
@@ -31,7 +31,7 @@ if (isset($_POST['save'])) {
                 count--;
                 if (count === 0) {
                     clearInterval(interval);
-                    window.location.href = '../home.html';
+                    window.location.href = '../index.html';
                 }
             }, 1000);
         </script>
