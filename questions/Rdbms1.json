@@ -1,0 +1,81 @@
+[{
+       "question":"What is an RDBMS?" ,
+       "choice1":"Database that stores data elements that are not linked" ,
+       "choice2":"Database that accesses data elements that are not linked" ,
+       "choice3": "Database that stores and allows access to data elemts that are linked",
+       "choice4":"None of the mentioned" ,
+       "answer":3
+
+},
+   {   
+      "question":"The primary key is selected from the _______",
+      "choice1":"Candidate keys",
+      "choice2":"Composite keys",
+      "choice3":"Determinants",
+      "choice4": "Foreign keys",
+      "answer":1
+},
+{
+     "question":"Which of the following commands do we use to delete a relation(RDBMS) from a database?",
+      "choice1":"drop table RDBMS",
+      "choice2":"delete table RDBMS",
+      "choice3":"delete from RDBMS",
+      "choice4": "drop relation RDBMS",
+      "answer":1
+},
+{
+     "question":"What does the following query do?\n UPDATE student \n SET marks=marks*1.10;",
+      "choice1":"It decreases the marks of all the students by 90%",
+      "choice2":"It increases the marks of all the students by 10%",
+      "choice3":"It is syntactically wrong",
+      "choice4": "It increases the marks of all the students by 110%",
+      "answer":2
+},
+{
+    "question":"Which of the following is preserved in the execution of transactions in isolation?",
+      "choice1":"Atomicity",
+      "choice2":"Isolation",
+      "choice3":"Consistency",
+      "choice4": "Durability",
+      "answer":3
+},
+{
+    "question":"The database is alwys expected to satisfy which predicate?",
+      "choice1":"Assertion",
+      "choice2":"Mandate",
+      "choice3":"Verify",
+      "choice4": "None of the above",
+      "answer":1
+},
+{
+    "question":"What kind of joins is a default in SQL?" ,
+       "choice1":"Outer" ,
+       "choice2":"Self" ,
+       "choice3": "Inner",
+       "choice4":"None of the above" ,
+       "answer":3
+},
+   {
+     "question":"A relation is in the form if it is in BCNF and has no multivalued dependencies" ,
+       "choice1":"Second normal form" ,
+       "choice2":"Third normal form" ,
+       "choice3": "Fourth normal form",
+       "choice4":"Domain/Key normal form" ,
+       "answer":3
+},
+ {
+     "question":"Which of the following is the correct option for the given query?\n SELECT DISTINCT name FROM RDBMS \n WHERE ID IS NOT NULL;" ,
+       "choice1":"The query gives all the possible RDBMS names where a finite value exists for ID" ,
+       "choice2":"The query gives the RDBMS names where a finite value exists for ID and it excludes identical names" ,
+       "choice3": "The query gives the names of the RDBMS that have a null ID and it also excludes identical names",
+       "choice4":"The query is syntactically wrong" ,
+       "answer":2
+},
+{
+    "question":"For each sttribute of a relation, there is a set of permitted values, called the _______ of that attribute" ,
+       "choice1":"Domain" ,
+       "choice2":"Relation" ,
+       "choice3": "Set",
+       "choice4":"Schema" ,
+       "answer":1
+}]
